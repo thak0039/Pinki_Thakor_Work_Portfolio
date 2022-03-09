@@ -40,7 +40,7 @@
                 event.preventDefault();
 
                 const hash = event.target.hash;
-                console.log(hash);
+                // console.log(hash);
 
                 // DeActivate existing  active 'section'
 
@@ -55,16 +55,33 @@
 
                 navMenu.querySelector(".active").classList.add("outer-shadow", "hover-in-shadow");
                 navMenu.querySelector(".active").classList.remove("active", "inner-shadow");
-
+                /* If clicked 'link-item' is contained within the navigation menu */
                 if (navMenu.classList.contains("open")) {
                     // activate new navigation menu 'link-item'
-
                     event.target.classList.add("active", "inner-shadow");
                     event.target.classList.remove("outer-shadow", "hover-in-shadow");
 
                     //hide navigation menu 
                     hideNavMenu();
+                    
                 }
+                else{
+                   let navItems = navMenu.querySelectorAll(".link-item");
+                   navItems.forEach((item)=>{
+                       if(hash === item.hash){
+
+                           //activate  new navigation menu 'limk-item'
+                           item.classList.add("active", "inner-shadow");
+                           item.classList.remove("outer-shadow", "hover-in-shadow");
+
+
+                       }
+                   })
+                   fadeOutEffect();
+                }
+                //add hash(#) to URL
+                window.location.hash = hash;
+
 
             }
 
@@ -73,7 +90,6 @@
     })
 
 })();
-
 
 /* -------------------- about section tabs-----------------------*/
 (() => {

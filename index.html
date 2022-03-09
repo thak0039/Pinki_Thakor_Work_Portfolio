@@ -10,11 +10,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Defult color skin -->
+    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+    <!---------------- style switcher demo ----------------------------->
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 
 </head>
 
-<body>
-    <!----Heder Start-->
+<body> 
+    <!----------------- Heder Start ---------->
 
     <header>
 
@@ -154,10 +163,10 @@
                     </div>
                     <!-- Socia Links Start -->
                     <div class="social-links">
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/thakor.pinku.7/" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/thak0039" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/pinkithakor7874/" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pinki-thakor-71b226175/" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
 
                     </div>
                     <!-- Socia Links End -->
@@ -508,43 +517,7 @@
                         <!-- portfolio Item detail end -->
                          </div>
                          </div>
-                                <!-- portfolio item end -->
-                <!-- portfolio item start -->
-                <div class="portfolio-item" data-category="e-Commerce">
-                    <div class="portfolio-item-inner outer-shadow">
-                        <div class="portfolio-item-img">
-                            <img src="./img/portfolio/thumb/project-3.png" alt="portfolio" data-screnshots="img/portfolio/large/project-3/1.png,
-                            img/portfolio/large/project-3/2.png,
-                            img/portfolio/large/project-3/3.png,
-                            img/portfolio/large/project-3/4.png,
-                            img/portfolio/large/project-3/5.png">
-                            <!-- View project btn -->
-                            <span class=" view-project ">View Project</span>
-                        </div>
-                        <p class="portfolio-item-title ">Product Lamding Page</p>
-                        <!-- portfolio Item detail start -->
-                        <div class="portfolio-item-details ">
-                            <div class="row ">
-                                <div class="description ">
-                                    <h3>Project Brif:</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti unde tempora perspiciatis in. Neque laboriosam adipisci quidem voluptas veniam error.</p>
-                                </div>
-                                <div class="info ">
-                                    <h3>Project Info:</h3>
-                                    <ul>
-                                        <li>Date - <span>2021</span></li>
-                                        <li>Client/companey - <span>XYZ</span></li>
-                                        <li>Tools - <span>HTML,JavaScript, css, nodeJS</span></li>
-                                        <li>Web - <span><a href="#">www.domauncompaney.ca</a>2021</span></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio Item detail end -->
-                    </div>
-                </div>
-                <!-- portfolio item end -->
+                 <!-- portfolio item end -->
                 <!-- portfolio item start -->
                 <div class="portfolio-item " data-category="ux-ui">
                     <div class="portfolio-item-inner outer-shadow ">
@@ -983,8 +956,29 @@
         </div>
 
     </div>
-
  <!-- Portfolio popup end -->
+
+ <!-- style switcher start-->
+ <div class="style-switcher outer-shadow">
+     <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+         <i class="fas fa-cog fa-spin"></i>
+     </div>
+     <div class="day-night s-icon outer-shadow hover-in-shadow">
+         <i class="fas"></i>
+     </div>
+
+     <h4>Theme Colors</h4>
+     <div class="colors">
+         <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+         <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+         <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+         <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+         <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+
+     </div>
+ </div>
+
+ <!-- style switcher end-->
 
 
 
