@@ -1298,6 +1298,7 @@ Home section Css
         max-width: 70px;
         display: inline-block;
         width: 100%;
+        border-radius: 50%;
     }
     
     .testimonial-section .testi-item span {
